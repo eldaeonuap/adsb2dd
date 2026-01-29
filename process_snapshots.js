@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-// Convert captured tar1090 snapshots to synthetic detection data
+// Offline utility script (not part of core application logic).
+// Converts captured tar1090 snapshots into synthetic detection data
+// with realistic noise for testing downstream tracking algorithms
+// (e.g. retina-tracker). Radar coordinates and noise parameters are
+// hardcoded for a specific test scenario (San Francisco area, KSCZ-LD).
 
 import fs from 'fs';
 import path from 'path';
